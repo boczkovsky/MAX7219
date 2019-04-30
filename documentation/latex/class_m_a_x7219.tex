@@ -1,0 +1,49 @@
+\hypertarget{class_m_a_x7219}{}\section{M\+A\+X7219 Class Reference}
+\label{class_m_a_x7219}\index{MAX7219@{MAX7219}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_a_x7219_a72b9b9a3a8d404724f767752369e3a72}{M\+A\+X7219}} (uint8\+\_\+t pin\+\_\+din, uint8\+\_\+t pin\+\_\+cs, uint8\+\_\+t pin\+\_\+clk)
+\item 
+void \mbox{\hyperlink{class_m_a_x7219_a63ae4075a29a72a2b2433af9dc4b0af0}{initialize}} ()
+\item 
+void \mbox{\hyperlink{class_m_a_x7219_a9006fd3f33c2354edbb856f564b4d9e7}{send\+Command}} (unsigned char address, unsigned char data)
+\item 
+void \mbox{\hyperlink{class_m_a_x7219_a08d465502f884573bed22af5add2dcb0}{M\+A\+X7219main}} (uint8\+\_\+t a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_m_a_x7219_a72b9b9a3a8d404724f767752369e3a72}\label{class_m_a_x7219_a72b9b9a3a8d404724f767752369e3a72}} 
+\index{MAX7219@{MAX7219}!MAX7219@{MAX7219}}
+\index{MAX7219@{MAX7219}!MAX7219@{MAX7219}}
+\subsubsection{\texorpdfstring{MAX7219()}{MAX7219()}}
+{\footnotesize\ttfamily M\+A\+X7219\+::\+M\+A\+X7219 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pin\+\_\+din,  }\item[{uint8\+\_\+t}]{pin\+\_\+cs,  }\item[{uint8\+\_\+t}]{pin\+\_\+clk }\end{DoxyParamCaption})}
+
+Initialization of the \mbox{\hyperlink{class_m_a_x7219}{M\+A\+X7219}} to make it possible to send bits to it. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_m_a_x7219_a63ae4075a29a72a2b2433af9dc4b0af0}\label{class_m_a_x7219_a63ae4075a29a72a2b2433af9dc4b0af0}} 
+\index{MAX7219@{MAX7219}!initialize@{initialize}}
+\index{initialize@{initialize}!MAX7219@{MAX7219}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily void M\+A\+X7219\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initial setup of the \mbox{\hyperlink{class_m_a_x7219}{M\+A\+X7219}}. From Shutdown mode to Test mode and from Test mode to the Decode mode. \mbox{\Hypertarget{class_m_a_x7219_a08d465502f884573bed22af5add2dcb0}\label{class_m_a_x7219_a08d465502f884573bed22af5add2dcb0}} 
+\index{MAX7219@{MAX7219}!MAX7219main@{MAX7219main}}
+\index{MAX7219main@{MAX7219main}!MAX7219@{MAX7219}}
+\subsubsection{\texorpdfstring{MAX7219main()}{MAX7219main()}}
+{\footnotesize\ttfamily void M\+A\+X7219\+::\+M\+A\+X7219main (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{a }\end{DoxyParamCaption})}
+
+Function that changes the displayed number by counting to 9 and when the counter reaches 9 resets it to 0. \mbox{\Hypertarget{class_m_a_x7219_a9006fd3f33c2354edbb856f564b4d9e7}\label{class_m_a_x7219_a9006fd3f33c2354edbb856f564b4d9e7}} 
+\index{MAX7219@{MAX7219}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!MAX7219@{MAX7219}}
+\subsubsection{\texorpdfstring{sendCommand()}{sendCommand()}}
+{\footnotesize\ttfamily void M\+A\+X7219\+::send\+Command (\begin{DoxyParamCaption}\item[{unsigned char}]{address,  }\item[{unsigned char}]{data }\end{DoxyParamCaption})}
+
+Function that specifies to which address register and what data register send the bits. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+driver.\+h\item 
+driver.\+cpp\end{DoxyCompactItemize}
